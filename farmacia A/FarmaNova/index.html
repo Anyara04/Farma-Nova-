@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FarmaNova · La Romana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="top">
+    <a class="brand" href="#inicio"><span class="cross">+</span> FarmaNova</a>
+    <nav>
+      <a href="#catalogo">Medicamentos</a>
+      <a href="#visitanos">Visítanos</a>
+    </nav>
+    <button class="cart-btn" id="openCart" aria-label="Abrir pedido">
+      Mi pedido <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="tag">Abierto de lunes a sábado</p>
+        <h1>Tu Salud, <em>Cerca de Casa.</em></h1>
+        <p>Medicamentos de confianza en San Carlos, La Romana. Arma tu pedido y lo preparamos por WhatsApp.</p>
+        <a class="btn" href="#catalogo">Ver medicamentos</a>
+      </div>
+      <div class="hero-card">
+        <span>Horario</span>
+        <strong>8:00 a. m. – 8:00 p. m.</strong>
+        <small>Lunes a sábado</small>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalogo">
+      <h2>Nuestros medicamentos</h2>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="visit" id="visitanos">
+      <div>
+        <h2>Visítanos</h2>
+        <p>San Carlos, Calle N/9, La Romana</p>
+        <p>Lunes a sábado, de 8:00 a. m. a 8:00 p. m.</p>
+      </div>
+      <div class="contact">
+        <a class="btn light" href="tel:8095508839">Llámanos al 809-550-8839</a>
+        <a class="btn" href="https://wa.me/18095508839" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 FarmaNova · La Romana</footer>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Mi pedido</h3>
+      <button id="closeCart" aria-label="Cerrar">×</button>
+    </div>
+    <ul id="cartList"></ul>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><strong id="cartTotal">RD$ 0</strong></div>
+      <button class="btn full" id="orderBtn">Pedir por WhatsApp</button>
+      <button class="clear" id="clearBtn">Vaciar pedido</button>
+    </div>
+  </aside>
+  <div class="veil" id="veil"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
